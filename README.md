@@ -156,7 +156,11 @@ Let’s get started:
 
 # Installation
 1.	Download the Install Script from our Github account. In the terminal type or copy paste the following command:
-cd && wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/SkyInstallScript.sh
+
+```
+<b>cd && wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/SkyInstallScript.sh</b>
+```
+
 Alright lets do some magic. Run the script! In the terminal shell type or copy paste the following command:
 sh ~/SkyInstallScript.sh
 
