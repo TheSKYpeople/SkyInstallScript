@@ -210,3 +210,19 @@ sh ~/SkyInstallScript.sh
 
 3.	CONGRATULATIONS!!! Your Skyminer is now fully installed!
 
+# Donations
+Was our SkyInstallScript helpful to you? It took us many hours of hard work to put this all of this together and to figure out how to setup a Skyminer in the first place. Please consider a donation. Thank you!
+
+SKYCOIN
+```
+zrwaGKR8oG7juYLHqgj7zwxH4bGYPEwWTB
+```
+
+ETHEREUM 
+```
+0x25a4cc8003a626e0b1d0be4626dc33e82a0096a0
+```
+BITCOIN 
+```
+1EH9Sw1JgnndJGVnUsQkhhiA6XBynqUFuQ
+```
