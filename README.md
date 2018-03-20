@@ -5,7 +5,10 @@ We wanted to make the process of setting up a fully operational Skycoin Miner as
 
 We also included auto start scripts to keep your miners operational after a reboot or a shutdown. They are also automatically installed with the script. The installation script needs only to be executed on one board and it logins in to the other boards via SSH itself to install them, too. 
 
-After you finished the hardware assembly using the following tutorial you are good to start with the software part using this tutorial: https://downloads.skycoin.net/skywire/Skywire_Miner_Assembly_Manual_2_1.pdf
+After you finished the hardware assembly using the following tutorial you are good to start with the software part using this tutorial:
+```
+https://downloads.skycoin.net/skywire/Skywire_Miner_Assembly_Manual_2_1.pdf
+```
 
 
 # Preparations for Installation
