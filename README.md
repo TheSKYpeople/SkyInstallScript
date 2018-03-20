@@ -6,9 +6,8 @@ We wanted to make the process of setting up a fully operational Skycoin Miner as
 We also included auto start scripts to keep your miners operational after a reboot or a shutdown. They are also automatically installed with the script. The installation script needs only to be executed on one board and it logins in to the other boards via SSH itself to install them, too. 
 
 After you finished the hardware assembly using the following tutorial you are good to start with the software part using this tutorial:
-```
 https://downloads.skycoin.net/skywire/Skywire_Miner_Assembly_Manual_2_1.pdf
-```
+
 
 
 # Preparations for Installation
@@ -29,9 +28,11 @@ Please download for
 
 ### Armbian - (Operation System for Orange PI’s) 
 All other tutorials we came across used the full desktop version (with GUI) of Armbian. We would highly recommend to only use the light/server version since a GUI setup always comes with a few downsides. First GUI needs more computing resources which can be used for the miner itself and second a desktop version comes with a lot of bloatware which increases the chances of a security breach. Our tutorial although is that simple and step by step that you will face no issues installing the server version.  
-Please download 
-ARMBIAN for Orange PI Prime server version (Ubuntu based)
-https://dl.armbian.com/orangepiprime/Ubuntu_xenial_next.7z
+
+Please download ARMBIAN for Orange PI Prime server version (Ubuntu based)
+| Download Link | 
+| ------------- | 
+| https://dl.armbian.com/orangepiprime/Ubuntu_xenial_next.7z | 
 
 
 ### SSH Client PuTTY/Cyberduck  (for remote control) 
