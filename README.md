@@ -132,38 +132,51 @@ Is the information correct: Y + <Enter>
 ```
 8.	Well done! We are logged in as root now. To make the board available for Putty/SSH and to use the webservices like the wallet we need to give it a static IP address. We do this in the next step…
 9.	In this last step (on the board it self) we give it an static IP. The router of the Skyminer always has the IP 192.168.0.1 which will also be both the satandard gateway as well as the DNS server for the OrangePI’s. We decided to give the boards the following IP addresses. 
-OrangePI 1  192.168.0.101   (Master Board)	
-OrangePI 2	192.168.0.102
-OrangePI 3	192.168.0.103
-OrangePI 4	192.168.0.104
-OrangePI 5	192.168.0.105
-OrangePI 6 	192.168.0.106
-OrangePI 7	192.168.0.107
-OrangePI 8	192.168.0.108
 
-Now let us change the IP of the board according to the list above. For the example we use OrangePI 1. 
+| Board Number| IP Address | 
+| ------------- |:-------------:| 
+| OrangePI 1 | 192.168.0.101|
+| OrangePI 2 | 192.168.0.102|
+| OrangePI 3 | 192.168.0.103|
+| OrangePI 4 | 192.168.0.104|
+| OrangePI 5 | 192.168.0.105|
+| OrangePI 6 | 192.168.0.106|
+| OrangePI 7 | 192.168.0.107|
+| OrangePI 8 | 192.168.0.108|
+
+Now let us change the IP of the board according to the list above. For this example we use OrangePI 1. 
+
 In the terminal type and press enter afterwards: 
+
+```
 nano /etc/network/interfaces
+```
 
 The network configuration file appears and we are about to make changes inside the green surrounded block (eth0):
 
 Now lets modify the entries like the following:
-# Wired adapter #1			stays as it is
-allow-hotplug eth0			stays as it is
-#no-auto-down eth0 	insert # at the beginning
-iface eth0 inet static 	delete dhcp and type static
-address 192.168.0.101 	 remove # at the beginning and type IP from the table above (ex:192.168.0.101)
-netmask 255.255.255.0	remove # at the beginning
-gateway 192.168.0.1 	remove # at the beginning
+
+```
+# Wired adapter #1		       	stays as it is
+allow-hotplug eth0			       stays as it is
+#no-auto-down eth0 	        insert # at the beginning
+iface eth0 inet static 	    delete dhcp and type static
+address 192.168.0.101 	     remove # at the beginning and type IP from the table above (ex:192.168.0.101)
+netmask 255.255.255.0	      remove # at the beginning
+gateway 192.168.0.1 	       remove # at the beginning
 dns-nameservers 192.168.0.1	remove # and replace 8.8.8.8  8.8.4.4 with 192.168.0.1
+```
+
 Now your screen should look like this:
 
-The changes must be saved to be put into effect.
-We do this by pressing Ctrl+x, then type Y and press enter
-After that the window automatically closes.
-Now you are back in the terminal and we must reboot.
-Type reboot now and press enter.
-The preconfiguration of the board is finished at this point.
+The changes must be saved to be put into effect. We do this by pressing Ctrl+x, then type Y and press enter. After that the window automatically closes. Now you are back in the terminal and we must reboot. To do so copy paste the following into your terminal:
+
+```
+sudo reboot now
+```
+
+The preconfiguration of the OrangePI 1 is finished at this point.
+
 10.	Okay now repeat the same steps in this section (First Login to Armbian) on the other 3 plugged in microSD cards/OrangePI’s. When you are finished unplugged them and insert them into the bottom row of your OrangePI’s, plug in the left 4 microSD’s to the top row and do the same there. After that you are finished with this section.
 
 ## Setup Putty (Win) or Keka (MacOS)
