@@ -158,13 +158,17 @@ Let’s get started:
 1.	Download the Install Script from our Github account. In the terminal type or copy paste the following command:
 
 ```
-<b>cd && wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/SkyInstallScript.sh</b>
+cd && wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/SkyInstallScript.sh
 ```
 
 Alright lets do some magic. Run the script! In the terminal shell type or copy paste the following command:
+
+```
 sh ~/SkyInstallScript.sh
+```
 
 2.	You will be asked for the root password you used for all boards. This is needed to automatically login to the OrangePI boards 2-8 and also install the software there automatically. Everyting is now done automatically you just need to wait a couple of minutes. You will be informed as soon the installation is finished.
+
 The password is neither stored nor send out, you can easly verifiy that by reviewing the code or ask somebody who can and you trust.
 
 3.	CONGRATULATIONS!!! Your Skyminer is now fully installed!
