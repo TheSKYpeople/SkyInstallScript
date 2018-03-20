@@ -17,11 +17,13 @@ Depending on what OS you are using on your Workstation (the computer you use in 
 
 Please download for
 
-Windows 64bit - https://github.com/resin-io/etcher/releases/download/v1.3.1/Etcher-Setup-1.3.1-x64.exe
-Windows 32bit - https://github.com/resin-io/etcher/releases/download/v1.3.1/Etcher-Portable-1.3.1-x86.exe
-MacOS         - https://github.com/resin-io/etcher/releases/download/v1.3.1/Etcher-1.3.1.dmg
-Linux 64bit   - https://github.com/resin-io/etcher/releases/download/v1.3.1/etcher-1.3.1-linux-x86_64.zip
-Linux 32bit   - https://github.com/resin-io/etcher/releases/download/v1.3.1/etcher-1.3.1-linux-i386.zip
+| Platform	| Download Link | 
+| ------------- |:-------------:| 
+| Windows 64bit | https://github.com/resin-io/etcher/releases/download/v1.3.1/Etcher-Setup-1.3.1-x64.exe |
+| Windows 32bit | https://github.com/resin-io/etcher/releases/download/v1.3.1/Etcher-Portable-1.3.1-x86.exe      |
+| MacOS		| https://github.com/resin-io/etcher/releases/download/v1.3.1/Etcher-1.3.1.dmg      		|
+| Linux 64bit	| https://github.com/resin-io/etcher/releases/download/v1.3.1/etcher-1.3.1-linux-x86_64.zip    |
+| Linux 32bit	| https://github.com/resin-io/etcher/releases/download/v1.3.1/etcher-1.3.1-linux-i386.zip      |
 
 ### Armbian - (Operation System for Orange PI’s) 
 All other tutorials we came across used the full desktop version (with GUI) of Armbian. We would highly recommend to only use the light/server version since a GUI setup always comes with a few downsides. First GUI needs more computing resources which can be used for the miner itself and second a desktop version comes with a lot of bloatware which increases the chances of a security breach. Our tutorial although is that simple and step by step that you will face no issues installing the server version.  
