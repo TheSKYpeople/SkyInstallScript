@@ -8,12 +8,11 @@
 #######################################################################################################################################################################
 ##### Version:		1.0  - Get the newest version at https://github.com/TheSKYpeople/SkyInstallScript
 #######################################################################################################################################################################
-##### Team:			The SKYpeople (Email: TheSKYpeople@protonmail.com - Telegram: @TheSKYpeople)
-##### Author: 		VikingAlpha 
-##### Licence:		GNU General Public License v3.0
-##### Donations:	Skycoin      zrwaGKR8oG7juYLHqgj7zwxH4bGYPEwWTB
-#####				Ethereum     0x25a4cc8003a626e0b1d0be4626dc33e82a0096a0
-#####				Bitcoin 	 1EH9Sw1JgnndJGVnUsQkhhiA6XBynqUFuQ
+##### Team:			    The SKYpeople (Email: TheSKYpeople@protonmail.com - Telegram: @TheSKYpeople) 
+##### Licence:		  GNU General Public License v3.0
+##### Donations:	  Skycoin      zrwaGKR8oG7juYLHqgj7zwxH4bGYPEwWTB
+#####				        Ethereum     0x25a4cc8003a626e0b1d0be4626dc33e82a0096a0
+#####				         Bitcoin 	   1EH9Sw1JgnndJGVnUsQkhhiA6XBynqUFuQ
 #######################################################################################################################################################################
 #######################################################################################################################################################################
 
