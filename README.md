@@ -30,9 +30,10 @@ Please download for
 All other tutorials we came across used the full desktop version (with GUI) of Armbian. We would highly recommend to only use the light/server version since a GUI setup always comes with a few downsides. First GUI needs more computing resources which can be used for the miner itself and second a desktop version comes with a lot of bloatware which increases the chances of a security breach. Our tutorial although is that simple and step by step that you will face no issues installing the server version.  
 
 Please download 
-| OS	| Download Link | 
+| OS	           | Download Link | 
 | ------------- |:-------------:| 
 | ARMBIAN for Orange PI Prime server version (Ubuntu based)| https://dl.armbian.com/orangepiprime/Ubuntu_xenial_next.7z |
+| Test | Test |
 
 
 ### SSH Client PuTTY/Cyberduck  (for remote control) 
