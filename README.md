@@ -70,14 +70,27 @@ sudo apt-get install -yqq p7zip-full
 ```
 
 #### Install on Linux CentOS / Fedora based
+```
 sudo yum install -y -q epel-release
-sudo rpm -U --quiet http://mirrors.kernel.org/fedora-epel/6/i386/epel-release-6-8.noarch.rpm
-sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
-sudo yum repolist
-sudo yum install -y -q p7zip p7zip-plugins
+```
 
-The download part is now finished!
-Let’s install the just downloaded software on your workstation (but not Armbian of course 😉). We think that process is straight forward, and you won’t need any further instructions for that. In case you do - feel free to contact us!
+```
+sudo rpm -U --quiet http://mirrors.kernel.org/fedora-epel/6/i386/epel-release-6-8.noarch.rpm
+```
+
+```
+sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+```
+
+```
+sudo yum repolist
+```
+
+```
+sudo yum install -y -q p7zip p7zip-plugins
+```
+
+The download part is now finished! Let’s install the just downloaded software on your workstation (but not Armbian of course 😉). We think that process is straight forward, and you won’t need any further instructions for that. In case you do - feel free to contact us!
 
 ## Flashing Orange PI SD Cards
 Alright! Now that your environment is perfectly prepared let’s get some stuff done. 
