@@ -230,8 +230,9 @@ BITCOIN
 # Contact
 If you need further assistence or have any question feel free to contact us. We are happy to chat and share!
 
-| Conatct	| USER / NUMBER / ADSRESS | 
+| Conatct	| USER / NUMBER / ADDRESS | 
 | ------------- |:-------------:| 
 | Telegram	| @TheSKYpeople |
 | Whatsapp	| +44 737-701-5885|
 | Email		| TheSKYpeople@protonmail.com|
+
