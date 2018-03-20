@@ -1,1 +1,7 @@
 
+
+###### Change into Skycoin directory
+cd $GOPATH/src/github.com/skycoin/skycoin
+
+###### Launching Skycoin in the background
+make run > /dev/null 2>&1 &
