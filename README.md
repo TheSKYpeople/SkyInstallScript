@@ -234,4 +234,4 @@ If you need further assistence or have any question feel free to contact us. We 
 | ------------- |:-------------:| 
 | Telegram	| @TheSKYpeople |
 | Whatsapp	| +44 737-701-5885|
-| Email		| www.TheSkyPeople.com|
+| Email		| TheSKYpeople@protonmail.com|
