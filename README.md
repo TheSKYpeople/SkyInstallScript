@@ -29,7 +29,7 @@ Please download for
 ### Armbian - (Operation System for Orange PI’s) 
 All other tutorials we came across used the full desktop version (with GUI) of Armbian. We would highly recommend to only use the light/server version since a GUI setup always comes with a few downsides. First GUI needs more computing resources which can be used for the miner itself and second a desktop version comes with a lot of bloatware which increases the chances of a security breach. Our tutorial although is that simple and step by step that you will face no issues installing the server version.  
 
-Please download 
+Please download:
 
 | OS		| Download Link | 
 | ------------- |:-------------:| 
@@ -38,15 +38,14 @@ Please download
 
 ### SSH Client PuTTY/Cyberduck  (for remote control) 
 PuTTY for Windows and Cyberduck for MacOS is used to remote control your Orange PI’s from your workstation. It makes it possible to copy & paste the commands given in this tutorial easily into the remote machine (the Orange PI’s). Putty is only necessary if you are working on a Windows and Cyberduck only for Mac workstations. All Linux workstation have an SSH client natively incorporated inside the terminal (if not it can be easily installed within the terminal). Later in this tutorial we will also explain how to connect to the Orange PI’s using both Putty and Linux SSH.
+
 Please download:
-PuTTY for Windows 64bit  
-https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.70-installer.msi
 
-PuTTY for Windows 32bit  
-https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.70-installer.msi
-
-Cyberduck for MacOS  
-https://update.cyberduck.io/Cyberduck-6.4.1.27633.zip
+| App / Platform| Download Link | 
+| ------------- |:-------------:| 
+| PuTTY for Windows 64bit | https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.70-installer.msi |
+| PuTTY for Windows 32bit | https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.70-installer.msi |
+| Cyberduck for MacOS  | https://update.cyberduck.io/Cyberduck-6.4.1.27633.zip |
 
 
 ### Extractor for 7zip files (needed to unzip Armbian)
