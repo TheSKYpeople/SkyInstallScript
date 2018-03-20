@@ -50,17 +50,26 @@ Please download:
 
 ### Extractor for 7zip files (needed to unzip Armbian)
 Most likely you already have an extractor capable of handling 7zip archives installed on your workstation. In that case you can skip this step.
+
 Please download:
-7zip for Windows 64bit  
-http://www.7-zip.org/a/7z1801-x64.exe
-7zip for Windows 32bit  
-http://www.7-zip.org/a/7z1801.exe
-Keka for MacOS  
-http://download.kekaosx.com/
-Linux Debian / Ubuntu based
+
+| App / Platform| Download Link | 
+| ------------- |:-------------:| 
+| 7zip for Windows 64bit | http://www.7-zip.org/a/7z1801-x64.exe |
+| 7zip for Windows 32bit | http://www.7-zip.org/a/7z1801.exe |
+| Keka for MacOS  | http://download.kekaosx.com/ |
+
+
+#### Install on Linux Debian / Ubuntu based
+```
 sudo apt-get update -yqq
+```
+
+```
 sudo apt-get install -yqq p7zip-full
-Linux CentOS / Fedora based
+```
+
+#### Install on Linux CentOS / Fedora based
 sudo yum install -y -q epel-release
 sudo rpm -U --quiet http://mirrors.kernel.org/fedora-epel/6/i386/epel-release-6-8.noarch.rpm
 sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
