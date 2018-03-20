@@ -97,6 +97,7 @@ Alright! Now that your environment is perfectly prepared let’s get some stuff 
 First, we start with flashing all 8 SD cards with Armbian using Etcher. Before we can do that, we need to unzip the Armbian download file.
 By doing the steps mentioned above we are going to make Armbian bootable on the Orange PI boards. If you are used to installing an operation system like Windows or Linux this step will come to some surprise for you. Etcher does basically the entire installation process without any user input. You just plug the SD cards into your Orange PI’s and as soon as you switch the power supply on the will boot into the ready to use OS right away.
 Ready? Let’s go 😊
+
 1.	Unzip the downloaded Armbian 7zip archive using 7zip. 
 To do so right click on the archive, select 7-zip and then unzip to... 
 2.	As a result, we get a new folder containing the file we going to need to flash the SD card with Etcher. It’s a .iso file. 
@@ -110,6 +111,7 @@ To prevent this rather unplug all other memory cards, USB sticks and external ha
 8.	When you see the picture above the first card is successfully flashed. If something went south, please feel free to contact as for assistance. 
 9.	Now repeat the same with the other 7 microSD cards.
 10.	Well done! Let’s take your awesome Skyminer and 4 of the 8 flashed microSD cards and insert the 4 cards to the top row of Orange PI’s. 
+
 You might think now why only 4 and only the top ones? Simple answer we need an HDMI display and a USB keyboard to prepare the operation system (Armbian) for the first start. The bottom raw is simply not accessible with an SD cable. So, we do the next steps on 4 cards and when finished we unplug them and plug them to the bottom row. After that we repeat the same steps with the last 4 microSD’s.
 
 ## First Login to Armbian
@@ -120,14 +122,14 @@ You might think now why only 4 and only the top ones? Simple answer we need an H
 5.	Now you are requiered to change the root password. Select a strong password here with at least 13 digits and one special character. (Use the same password for all other OrangePI’s)
 6.	Now we are asked to setup a user and give it a password. Since Armbian is based on Debian/Ubuntu the user can obtain sudo rights. That’s why we need to choose a strong password here, too. But again you can use the same for all 8 OrangePI’s. As username we have choosen “skyminer”, you can choose another one if you want.
 7.	Now you are asked a couple of questions about the new user.  But you don’t need to provide them you can just hit enter and confirm with Y + enter at the end.
-
+```
 Full name: <Enter>
 Room number: <Enter>
 Work phone: <Enter>
 Home phone: <Enter>
 Other: <Enter>
 Is the information correct: Y + <Enter>
-
+```
 8.	Well done! We are logged in as root now. To make the board available for Putty/SSH and to use the webservices like the wallet we need to give it a static IP address. We do this in the next step…
 9.	In this last step (on the board it self) we give it an static IP. The router of the Skyminer always has the IP 192.168.0.1 which will also be both the satandard gateway as well as the DNS server for the OrangePI’s. We decided to give the boards the following IP addresses. 
 OrangePI 1  192.168.0.101   (Master Board)	
