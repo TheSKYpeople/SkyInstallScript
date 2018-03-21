@@ -124,11 +124,15 @@ You might think now why only 4 and only the top ones? Simple answer we need an H
 
 ## First Login to Armbian
 1.	Connect the Ethernet cables of your miner, internet router and your workstation. If you haven’t it done already, please connect your Skyminer’s router (WAN port) with your internet router using an ethernet cable. Also connect the Orange PI’s to the routers switch, spare one port for the moment (like shown in the picture below) and connect your workstation computer with it to use Putty/SSH client.
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut13.JPG "")
 2.	Okay now connect a HDMI display (if not available you can use a HDMI TV, too) and a USB keyboard to OrangePI number 1. There is no need for a mouse since wse decided to don’t use the GUI version of Armbian.
 3.	Turn on power for OrangePI number 1. Armbian is booting now and after a few seconds you should see a login screen like in the picture below. If something is not working here, please contact us for assistence. 
 4.	Login as root with the password 1234. To do so enter “root” press enter and enter “1234” press enter. Linux usually don’t show anything while you type your password. That’s normal just type “1234” and press enter. 
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut14.JPG "")
 5.	Now you are requiered to change the root password. Select a strong password here with at least 13 digits and one special character. (Use the same password for all other OrangePI’s)
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut15.JPG "")
 6.	Now we are asked to setup a user and give it a password. Since Armbian is based on Debian/Ubuntu the user can obtain sudo rights. That’s why we need to choose a strong password here, too. But again you can use the same for all 8 OrangePI’s. As username we have choosen “skyminer”, you can choose another one if you want.
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut16.JPG "")
 7.	Now you are asked a couple of questions about the new user.  But you don’t need to provide them you can just hit enter and confirm with Y + enter at the end.
 ```
 Full name: <Enter>
@@ -138,6 +142,7 @@ Home phone: <Enter>
 Other: <Enter>
 Is the information correct: Y + <Enter>
 ```
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut17.JPG "")
 8.	Well done! We are logged in as root now. To make the board available for Putty/SSH and to use the webservices like the wallet we need to give it a static IP address. We do this in the next step…
 9.	In this last step (on the board it self) we give it an static IP. The router of the Skyminer always has the IP 192.168.0.1 which will also be both the satandard gateway as well as the DNS server for the OrangePI’s. We decided to give the boards the following IP addresses. 
 
@@ -159,8 +164,10 @@ In the terminal type and press enter afterwards:
 ```
 nano /etc/network/interfaces
 ```
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut18.JPG "")
 
 The network configuration file appears and we are about to make changes inside the green surrounded block (eth0):
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut19.JPG "")
 
 Now lets modify the entries like the following:
 
@@ -176,6 +183,7 @@ dns-nameservers 192.168.0.1	remove # and replace 8.8.8.8  8.8.4.4 with 192.168.0
 ```
 
 Now your screen should look like this:
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut20.JPG "")
 
 The changes must be saved to be put into effect. We do this by pressing Ctrl+x, then type Y and press enter. After that the window automatically closes. Now you are back in the terminal and we must reboot. To do so copy paste the following into your terminal:
 
@@ -192,12 +200,15 @@ In order to be able to connect to the terminal of your OrangePI’s remotly to e
 Let’s get started:
 
 1.	Open the Putty file you have downloaded at the beginning of this tutorial. In the window that opens type the IP address of the first OrangePI board into the red circled area and replace the three green “X” with the board you want to connect which would be according to list of IP’s above 192.168.0.101 for OrangePI 1 (the master board). After that click the “Open” button.
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut21.JPG "")
  
 2.	The following security alert is normal and can be easily ignored. Since you created the certificate yourself and we think you are trusting your self 😉. Just click on “Yes”.
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut22.JPG "")
 
 3.	You now have a remote terminal shell on your OrangePI and all commands you run will be run on the OrangePI not on your local machine. 
 
 4.	You need to login to the OrangePI with your user and password. Type “root” when asked “Login as” and when you asked for the password type the one you have choosen when you first started the OrangePI. Be careful it’s the root password not the user password.
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut23.JPG "")
 
 5.	Congratulations now you can fully control the OrangePI from your workstation. We are finsihed here and you can move to the next step.
 
