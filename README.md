@@ -11,6 +11,9 @@ https://downloads.skycoin.net/skywire/Skywire_Miner_Assembly_Manual_2_1.pdf
 
 
 # Preparations for Installation
+The following tutorial is also availabe as PDF for download:
+https://github.com/TheSKYpeople/SkyInstallScript/raw/master/tutorial/How%20to%20install%20a%20Skyminer%20automatically%20using%20SkyInstallScript.pdf
+
 ## Downloads
 
 ### Etcher - (Software to Flash SD Cards) 
