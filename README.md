@@ -1,3 +1,4 @@
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/banner.JPG "")
 # SkyInstallScript
 Automatic installation script for Skyminers / Skycoin node
 
