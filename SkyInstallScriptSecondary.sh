@@ -129,11 +129,6 @@ echo "Skywire is now running in the background. You can now access the Skywire M
 sleep 5
  
 
-##### START THE SKYWIRE NODE
-cd $GOPATH/bin
-./node -connect-manager -manager-address :5998 -manager-web :8000 -discovery-address messenger.skycoin.net:5999 -address :5000 -web-port :6001 > /dev/null 2>&1 &
- echo "Your node is now fully operational and you can see it in the Skywire Manager" 
-
 
 ##### START SKYWIRE MONITOR
 ###### Change into installation path
@@ -161,5 +156,3 @@ sudo mv ServiceStartSkywireSecondary.sh /etc/init.d/
 ###### Invoke update-rc.d
 sudo update-rc.d ServiceStartSkycoinWallet.sh defaults
 sudo update-rc.d ServiceStartSkywireSecondary.sh defaults
-
-
