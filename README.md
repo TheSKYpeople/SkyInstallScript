@@ -226,6 +226,7 @@ BITCOIN
 ```
 1EH9Sw1JgnndJGVnUsQkhhiA6XBynqUFuQ
 ```
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/donations.JPG "Please donate!")
 
 # Contact
 If you need further assistence or have any question feel free to contact us. We are happy to chat and share!
