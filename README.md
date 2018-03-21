@@ -102,14 +102,21 @@ Ready? Let’s go 😊
 To do so right click on the archive, select 7-zip and then unzip to... 
 ![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut6.JPG "")
 2.	As a result, we get a new folder containing the file we going to need to flash the SD card with Etcher. It’s a .iso file. 
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut7.JPG "")
 3.	Now open Etcher and click on “Select image”.
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut8.JPG "")
 4.	Select the Armbian .iso image (highlighed in yellow above) and click “Open”. 
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut9.JPG "")
 5.	Insert the first microSD card into your computers SD Card reader. In most cases you will need an adaptor for that as shown below (SD or USB both work fine). 
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut10.JPG "")
 6.	Now we need to select the drive of the microSD card. Sometimes the card gets selected automatically when it’s the only one connected to the PC.
 Attention! Be careful and select the right drive. If you accidently select a wrong drive you completely erase all its data. 
-To prevent this rather unplug all other memory cards, USB sticks and external hard drives first (if possible). 
+To prevent this rather unplug all other memory cards, USB sticks and external hard drives first (if possible).
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut11.JPG "")
 7.	Perfect now we are good to go. Press the “Flash!” button and lets flash 😊.
-8.	When you see the picture above the first card is successfully flashed. If something went south, please feel free to contact as for assistance. 
+8.	When you see the picture below the first card is successfully flashed. If something went south, please feel free to contact as for assistance. 
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut12.JPG "")
+
 9.	Now repeat the same with the other 7 microSD cards.
 10.	Well done! Let’s take your awesome Skyminer and 4 of the 8 flashed microSD cards and insert the 4 cards to the top row of Orange PI’s. 
 
