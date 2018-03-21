@@ -100,6 +100,7 @@ Ready? Let’s go 😊
 
 1.	Unzip the downloaded Armbian 7zip archive using 7zip. 
 To do so right click on the archive, select 7-zip and then unzip to... 
+![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/tut6.JPG "")
 2.	As a result, we get a new folder containing the file we going to need to flash the SD card with Etcher. It’s a .iso file. 
 3.	Now open Etcher and click on “Select image”.
 4.	Select the Armbian .iso image (highlighed in yellow above) and click “Open”. 
