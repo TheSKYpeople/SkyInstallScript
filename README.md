@@ -9,7 +9,9 @@ We also included auto start scripts to keep your miners operational after a rebo
 After you finished the hardware assembly using the following tutorial you are good to start with the software part using this tutorial:
 https://downloads.skycoin.net/skywire/Skywire_Miner_Assembly_Manual_2_1.pdf
 
-
+# Other Languages
+Este tutorial también está disponible en español: Próximamente
+Dieses Tutorial ist auch auf Deutsch verfügbar: Folgt in Kürze
 
 # Preparations for Installation
 The following tutorial is also availabe as PDF for download:
