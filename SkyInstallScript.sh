@@ -217,7 +217,10 @@ unset RootPassword
 ##### SUCCESSFUL INSTALLATION NOTIFICATION
 echo "Congratulation your Skyminer is now fully installed!"
 echo "Happy earning!"
-echo "Please consider a small donation if you liked our script!"
+echo "Please consider a small donation if you like our script!"
+echo "SKYCOIN: zrwaGKR8oG7juYLHqgj7zwxH4bGYPEwWTB"
+echo "BITCOIN: 0x25a4cc8003a626e0b1d0be4626dc33e82a0096a0"
+echo "ETHEREUM: 1EH9Sw1JgnndJGVnUsQkhhiA6XBynqUFuQ"
 
 
 
