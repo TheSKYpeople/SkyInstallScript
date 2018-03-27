@@ -11,6 +11,7 @@ https://downloads.skycoin.net/skywire/Skywire_Miner_Assembly_Manual_2_1.pdf
 
 # Other Languages
 Este tutorial también está disponible en español: Próximamente
+
 Dieses Tutorial ist auch auf Deutsch verfügbar: Folgt in Kürze
 
 # Preparations for Installation
