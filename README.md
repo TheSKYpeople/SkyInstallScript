@@ -10,7 +10,8 @@ This tutorial is for the Software part of your Skyminer. For the hardware assemb
 https://downloads.skycoin.net/skywire/Skywire_Miner_Assembly_Manual_2_1.pdf
 
 # Other Languages
-Este tutorial también está disponible en español: Próximamente
+Este tutorial también está disponible en español:
+https://github.com/TheSKYpeople/SkyInstallScript/raw/master/tutorial/C%C3%B3mo%20instalar%20un%20skyminer%20autom%C3%A1ticamente%20usando%20SkyInstallScript.pdf
 
 Dieses Tutorial ist auch auf Deutsch verfügbar: Folgt in Kürze
 
