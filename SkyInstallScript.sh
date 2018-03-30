@@ -62,7 +62,6 @@ echo "Installing GO dependencies right now..."
 sudo apt-get install -y curl git mercurial make binutils gcc bzr bison libgmp3-dev screen build-essential
 echo "GO ependencies succesfully installed!"
  
- 
 ##### INSTALL GO LIBRARY
 echo "Installing GO right now..."
 
@@ -183,8 +182,54 @@ sudo update-rc.d ServiceStartSkywirePrimary.sh defaults
 echo "Installation finished on OrangePI 1 (Master Board)."
 echo "Now automatically installing OrangePI 2-8 using SSH"
 echo "Please make sure that all OrangePIs are powered on!!!"
-cd ~
-wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/SkyInstallScriptSecondary.sh
+
+echo "We are now going to check if all the boards are up and reachable"
+is_alive_ping()
+{
+  ping -q -c2  $1 > /dev/null
+  if [ $? -eq 0 ]; then
+        echo "OrangePI with IP: $i is up."
+  else
+        echo "We detected that at least one OrangePI is down:"
+        echo "OrangePI with IP: $i is DOWN (Please start or reboot!)."
+        read -p "Do you want to install Skywire on OrangePI $i (y/n)?" Continue
+
+                while [ $Continue != n ] && [ $Continue != y ];
+                do echo 'Please answer with y or n'
+                read -p "Do you want to install Skywire on OrangePI $i (y/n)? If y (yes) please make sure it is connected via ethernet and turned on in" Continue
+                done
+
+                if [ $Continue = y ]; then
+                        echo "Continuing the installation proccess......"
+                        ping -q -c2 $i > /dev/null
+                                if [ $? -ne 0 ]; then
+                                echo "OrangePI $i is still not reachable. You can choose not to install on this board for now"
+                                read -p "Do you want to install Skywire on OrangePI $i at a later time (y/n)?"  InstallLater
+                                        while [ $InstallLater != n ] && [ $InstallLater != y ];
+                                        do echo 'Please answer with y or n'
+                                        read -p "Do you want to install skywire on OrangePI $i at a later time (y/n)?"  InstallLater
+                                        done
+
+                                        if [ $InstallLater = y ]; then echo "Continuing with the installation process....."
+                                        elif [ $InstallLater = n ]
+                                        then ping -q -c2 $i > /dev/null
+                                                if [ $? -ne 0 ]; then
+                                                        echo "OrangePI $i is still not reachable. You will have to install it later on this OrangePI. Continuing the installation process without this OrangePI......"
+                                                        else
+                                                echo "OrangePI with IP: $i is finally up. Continuing with the installation process......"
+                                                fi
+                                        fi
+                                else
+                                 echo "OrangePI with IP: $i is now up"
+                                fi
+
+                elif [ $Continue = n ]; then
+                        echo "You are not going to install on OrangePI $i for now. Continuing the installation process without it......"
+                fi
+  fi
+}
+for i in 192.168.0.{102..108}; do is_alive_ping $i; done
+
 
 ###### Install sshpass in order to login to OrangePI boards 2-8 using ssh
 sudo apt-get install sshpass
