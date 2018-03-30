@@ -257,6 +257,9 @@ BITCOIN
 ```
 ![alt text](https://github.com/TheSKYpeople/SkyInstallScript/raw/master/img/donations.JPG "Please donate!")
 
+# Disclosure
+We are not affiliated with the Skycoin/Skywire team neither are we involved in the development of Skycoin/Skywire. We are a group of friends with a Skyminer who thought we can help likeminded people with the not so easy installation process. For the official Skycoin project, please head over to: https://www.skycoin.net
+
 # Contact
 If you need further assistence or have any question feel free to contact us. We are happy to chat and share!
 
