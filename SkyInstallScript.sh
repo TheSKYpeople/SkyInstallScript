@@ -155,7 +155,9 @@ cd $GOPATH/bin
 ###### This line is to start the monitor on the master node (OrangePI 1) only / Other Orange PIs requiere a different line with the master nodes IP!!!
 ./node -connect-manager -manager-address :5998 -manager-web :8000 -discovery-address messenger.skycoin.net:5999 -address :5000 -web-port :6001 &> /dev/null 2>&1 &
 echo "Skywire monitor started." 
- 
+echo "You can now open the monitor in your browser: http://192.168.0.101:8000"
+sleep 10
+
 
 
 ##### AUTOSTART SCRIPTS / STOP SCRIPTS
@@ -248,7 +250,6 @@ ssh-keyscan -H 192.168.0.108 >> ~/.ssh/known_hosts
 
 ###### In order to automatically install OrangePI 2-8 we need to login via SSH and run the SkyInstallScript...
 ###### ... for secondory boards.
-
 ###### Connect to OrangePI 2 and run installation
 sshpass -p $RootPassword ssh root@192.168.0.102 << EOF
 sudo wget https://raw.githubusercontent.com/Warmat/SkyInstallScript/master/SkyInstallScriptSecondary.sh
