@@ -246,20 +246,53 @@ ssh-keyscan -H 192.168.0.106 >> ~/.ssh/known_hosts
 ssh-keyscan -H 192.168.0.107 >> ~/.ssh/known_hosts
 ssh-keyscan -H 192.168.0.108 >> ~/.ssh/known_hosts
 
+###### In order to automatically install OrangePI 2-8 we need to login via SSH and run the SkyInstallScript...
+###### ... for secondory boards.
+
 ###### Connect to OrangePI 2 and run installation
-sshpass -p RootPassword ssh root@192.168.0.102 'bash -s' < ~/SkyInstallScriptSecondary.sh && exit
+sshpass -p $RootPassword ssh root@192.168.0.102 << EOF
+sudo wget https://raw.githubusercontent.com/Warmat/SkyInstallScript/master/SkyInstallScriptSecondary.sh
+sudo chmod 755 ~/SkyInstallScriptSecondary.sh;
+sudo sh ~/SkyInstallScriptSecondary.sh &&  exit
+EOF
 ###### Connect to OrangePI 3 and run installation
-sshpass -p RootPassword ssh root@192.168.0.103 'bash -s' < ~/SkyInstallScriptSecondary.sh && exit
+sshpass -p $RootPassword ssh root@192.168.0.103 << EOF
+sudo wget https://raw.githubusercontent.com/Warmat/SkyInstallScript/master/SkyInstallScriptSecondary.sh
+sudo chmod 755 ~/SkyInstallScriptSecondary.sh;
+sudo sh ~/SkyInstallScriptSecondary.sh &&  exit
+EOF
 ###### Connect to OrangePI 4 and run installation
-sshpass -p RootPassword ssh root@192.168.0.104 'bash -s' < ~/SkyInstallScriptSecondary.sh && exit
+sshpass -p $RootPassword ssh root@192.168.0.104 << EOF
+sudo wget https://raw.githubusercontent.com/Warmat/SkyInstallScript/master/SkyInstallScriptSecondary.sh
+sudo chmod 755 ~/SkyInstallScriptSecondary.sh;
+sudo sh ~/SkyInstallScriptSecondary.sh &&  exit
+EOF
 ###### Connect to OrangePI 5 and run installation
-sshpass -p RootPassword ssh root@192.168.0.105 'bash -s' < ~/SkyInstallScriptSecondary.sh && exit
+sshpass -p $RootPassword ssh root@192.168.0.105 << EOF
+sudo wget https://raw.githubusercontent.com/Warmat/SkyInstallScript/master/SkyInstallScriptSecondary.sh
+sudo chmod 755 ~/SkyInstallScriptSecondary.sh;
+sudo sh ~/SkyInstallScriptSecondary.sh &&  exit
+EOF
 ###### Connect to OrangePI 6 and run installation
-sshpass -p RootPassword ssh root@192.168.0.106 'bash -s' < ~/SkyInstallScriptSecondary.sh && exit
+sshpass -p $RootPassword ssh root@192.168.0.106 << EOF
+sudo wget https://raw.githubusercontent.com/Warmat/SkyInstallScript/master/SkyInstallScriptSecondary.sh
+sudo chmod 755 ~/SkyInstallScriptSecondary.sh;
+sudo sh ~/SkyInstallScriptSecondary.sh &&  exit
+EOF
 ###### Connect to OrangePI 7 and run installation
-sshpass -p RootPassword ssh root@192.168.0.107 'bash -s' < ~/SkyInstallScriptSecondary.sh && exit
+sshpass -p $RootPassword ssh root@192.168.0.107 << EOF
+sudo wget https://raw.githubusercontent.com/Warmat/SkyInstallScript/master/SkyInstallScriptSecondary.sh
+sudo chmod 755 ~/SkyInstallScriptSecondary.sh;
+sudo sh ~/SkyInstallScriptSecondary.sh &&  exit
+EOF
 ###### Connect to OrangePI 8 and run installation
-sshpass -p RootPassword ssh root@192.168.0.108 'bash -s' < ~/SkyInstallScriptSecondary.sh && exit
+sshpass -p $RootPassword ssh root@192.168.0.108 << EOF
+sudo wget https://raw.githubusercontent.com/Warmat/SkyInstallScript/master/SkyInstallScriptSecondary.sh
+sudo chmod 755 ~/SkyInstallScriptSecondary.sh;
+sudo sh ~/SkyInstallScriptSecondary.sh && exit
+EOF
+
+
 
 ###### Clear root password variable
 unset RootPassword
