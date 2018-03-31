@@ -4,7 +4,7 @@
 #######################################################################################################################################################################
 ##### SKYMINER (SKYCOIN) ORANGE PI AUTO INSTALL SCRIPT
 ##### This script automatically installs the full Skycoin and Skywire software including all dependencies with one push of a button on all OrangePI boards.
-##### To run this script type "sh SkyInstallScript.sh" into a terminal and hit enter! 
+##### To run this script type "sh SkyInstallScriptStart.sh" into a terminal and hit enter! 
 ##### For more detailed instructions please consult our tutorial.
 ##### For further assistence feel free to contact us! 
 #######################################################################################################################################################################
