@@ -158,8 +158,5 @@ chmod u+x /etc/skyautostart/ServiceStartSkycoinWallet.sh
 chmod u+x /etc/skyautostart/ServiceStartSkywirePrimary.sh
 
 ###### Add to rc.local
-sudo sed -i -e '/etc/skyautostart/ServiceStartSkycoinWallet.sh' rc.local
-sudo sed -i -e '/etc/skyautostart/ServiceStartSkywirePrimary.sh' rc.local
-
-sed -i -e '$i \sh /etc/skyautostart/ServiceStartSkycoinWallet.sh &\n' /etc/rc.local
-sed -i -e '$i \sh /etc/skyautostart/ServiceStartSkywirePrimary.sh &\n' /etc/rc.local
+sudo sed -i -e '$i \sh /etc/skyautostart/ServiceStartSkycoinWallet.sh\n' /etc/rc.local
+sudo sed -i -e '$i \sh /etc/skyautostart/ServiceStartSkywirePrimary.sh\n' /etc/rc.local
