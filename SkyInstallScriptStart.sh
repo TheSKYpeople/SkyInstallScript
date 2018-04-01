@@ -149,13 +149,24 @@ wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/Serv
 ###### This is only be downloaded in case you need to stop Skywire with a script one day (it has no function in this script)
 wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/ServiceStopSkywire.sh
 
-###### Move script to init.d directory 
-sudo mv ServiceStartSkycoinWallet.sh /etc/init.d/
-sudo mv ServiceStartSkywirePrimary.sh /etc/init.d/
+###### Create destination folder
+sudo mkdir /etc/skyautostart
 
-###### Invoke update-rc.d
-sudo update-rc.d ServiceStartSkycoinWallet.sh defaults
-sudo update-rc.d ServiceStartSkywirePrimary.sh defaults
+###### Move script to /etc/skyautostart directory 
+sudo mv ServiceStartSkycoinWallet.sh /etc/skyautostart
+sudo mv ServiceStartSkywirePrimary.sh /etc/skyautostart
+
+###### Make scripts executable
+chmod u+x /etc/skyautostart/ServiceStartSkycoinWallet.sh
+chmod u+x /etc/skyautostart/ServiceStartSkywirePrimary.sh
+
+###### Add to rc.local
+sudo sed -i -e '/etc/skyautostart/ServiceStartSkycoinWallet.sh' rc.local
+sudo sed -i -e '/etc/skyautostart/ServiceStartSkywirePrimary.sh' rc.local
+
+sed -i -e '$i \sh /etc/skyautostart/ServiceStartSkycoinWallet.sh &\n' /etc/rc.local
+sed -i -e '$i \sh /etc/skyautostart/ServiceStartSkywirePrimary.sh &\n' /etc/rc.local
+
 
 
 ##### Executing InstallScript Part 2 (SkyInstallScriptRemote.sh) for installation of OrangePI 2-8 via SSH
