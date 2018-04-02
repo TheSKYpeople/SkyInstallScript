@@ -133,6 +133,15 @@ cd $GOPATH/bin
 ###### Starts Skywire Monitor service for the first time / after that command web interface of Monitor works
 ###### This line is to start the monitor on the slave nodes (OrangePI 2-8) only / Master Orange PIs requiere a different line!!!
 ./node -connect-manager -manager-address 192.168.0.101:5998 -manager-web 192.168.0.101:8000  -address :5000 -web-port :6001 > /dev/null 2>&1 &
-echo "Skywire monitor started." 
+echo "Skywire monitor started."
+
+##### START SCRIPTS / STOP SCRIPTS
+###### Download start / stop scripts
+echo "Downloading autostart scripts from TheSKYpeople Github" 
+cd ~
+wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/ServiceStartSkycoinWallet.sh
+wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/ServiceStartSkywireSecondary.sh
+wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/ServiceStopSkywire.sh
+
  
 
