@@ -139,7 +139,13 @@ echo "You can now open the monitor in your browser: http://192.168.0.101:8000"
 sleep 10
 
 
-
+##### START SCRIPTS / STOP SCRIPTS
+###### Download start / stop scripts
+echo "Downloading autostart scripts from TheSKYpeople Github" 
+cd ~
+wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/ServiceStartSkycoinWallet.sh
+wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/ServiceStartSkywireSecondary.sh
+wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/ServiceStopSkywire.sh
 
 ##### Executing InstallScript Part 2 (SkyInstallScriptRemote.sh) for installation of OrangePI 2-8 via SSH
 ###### Downloading Part 2
