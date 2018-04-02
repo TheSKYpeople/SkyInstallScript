@@ -136,27 +136,3 @@ cd $GOPATH/bin
 echo "Skywire monitor started." 
  
 
-
-##### AUTOSTART SCRIPTS / STOP SCRIPTS
-###### Download autostart / stop scripts
-echo "Downloading autostart scripts from TheSKYpeople Github" 
-cd ~
-wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/ServiceStartSkycoinWallet.sh
-wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/ServiceStartSkywirePrimary.sh
-###### This is only be downloaded in case you need to stop Skywire with a script one day (it has no function in this script)
-wget https://raw.githubusercontent.com/TheSKYpeople/SkyInstallScript/master/ServiceStopSkywire.sh
-
-###### Create destination folder
-sudo mkdir /etc/skyautostart
-
-###### Move script to /etc/skyautostart directory 
-sudo mv ServiceStartSkycoinWallet.sh /etc/skyautostart
-sudo mv ServiceStartSkywirePrimary.sh /etc/skyautostart
-
-###### Make scripts executable
-chmod u+x /etc/skyautostart/ServiceStartSkycoinWallet.sh
-chmod u+x /etc/skyautostart/ServiceStartSkywirePrimary.sh
-
-###### Add to rc.local
-sudo sed -i -e '$i \sh /etc/skyautostart/ServiceStartSkycoinWallet.sh\n' /etc/rc.local
-sudo sed -i -e '$i \sh /etc/skyautostart/ServiceStartSkywirePrimary.sh\n' /etc/rc.local
