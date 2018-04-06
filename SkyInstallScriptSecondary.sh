@@ -120,12 +120,12 @@ cd $GOPATH/src/github.com/skycoin/skywire/cmd
 go install ./...
 echo "Skywire succesfully installed!"
 
--##### Now Lauching Skywire
--echo "Now lauching Skywire"
--cd $GOPATH/bin
--./manager -web-dir ${GOPATH}/src/github.com/skycoin/skywire/static/skywire-manager > /dev/null 2>&1 &
--echo "Skywire is now running in the background. You can now access the Skywire Manager via the web browser" 
--sleep 5
+##### Now Lauching Skywire
+echo "Now lauching Skywire"
+cd $GOPATH/bin
+./manager -web-dir ${GOPATH}/src/github.com/skycoin/skywire/static/skywire-manager > /dev/null 2>&1 &
+echo "Skywire is now running in the background. You can now access the Skywire Manager via the web browser" 
+sleep 5
 
 ##### START SKYWIRE MONITOR
 ###### Change into installation path
@@ -133,7 +133,7 @@ cd $GOPATH/bin
 ###### Starts Skywire Monitor service for the first time / after that command web interface of Monitor works
 ###### This line is to start the monitor on the slave nodes (OrangePI 2-8) only / Master Orange PIs requiere a different line!!!
 ./node -connect-manager -manager-address 192.168.0.101:5998 -manager-web 192.168.0.101:8000  -address :5000 -web-port :6001 > /dev/null 2>&1 &
-echo "Skywire monitor started."
+echo "Skywire node is now started and you can see it in on the Monitor." 
 
 ##### START SCRIPTS / STOP SCRIPTS
 ###### Download start / stop scripts
